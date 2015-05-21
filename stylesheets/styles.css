@@ -6,18 +6,18 @@ body{
   color: white;
 }
 
-#totalLayout{
+.totalLayout{
   width: 70%;
   margin: 0 auto;
   text-align: center;
   position: relative;
 }
 
-#header{
+.header{
   width: 100%;
 }
 
-#header p{
+.header p{
   position: relative;
   float: left;
   display: inline-block;
@@ -46,12 +46,12 @@ ul, li{
   transform: translateY(50%);
 }
 
-#header ul{
+.header ul{
   position: relative;
   float: right;
 }
 
-#header li{
+.header li{
   margin-right: 5px;
   padding: 5px;
 }
@@ -76,7 +76,7 @@ ul, li{
   opacity: 0.8;
 }
 
-#navBar{
+.navBar{
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -85,13 +85,13 @@ ul, li{
   margin-right: -10%;
 }
 
-#navBar ul{
+.navBar ul{
   padding: 0;
   margin: 0;
   text-align: center;
 }
 
-#navBar li{
+.navBar li{
   background-color: #B4292E;
   margin: 3.5px;
   padding: 10px 50px 10px 50px;
