@@ -6,11 +6,14 @@ body{
   color: white;
 }
 
+img{
+  max-width: 100%;
+}
+
 .totalLayout{
-  width: 70%;
+  width: 1024px;
   margin: 0 auto;
   text-align: center;
-  position: relative;
 }
 
 .header{
@@ -19,23 +22,27 @@ body{
 
 .header p{
   position: relative;
-  float: left;
+  float: right;
   display: inline-block;
   top: 100%;
   transform: translateY(100%);
   font-size: 20px;
-  margin-left: 40%;
 }
 
 ul, li{
-  list-style-type: none
+  list-style-type: none;
   position: relative;
   float: left;
   display: inline-block;
-
 }
 
-.fa-circle{
+li{
+  -webkit-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  -moz-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+}
+
+.header .fa-circle{
   font-size: 5px;
   vertical-align: middle;
 }
@@ -48,6 +55,7 @@ ul, li{
 
 .header ul{
   position: relative;
+  display: inline-block;
   float: right;
 }
 
@@ -78,24 +86,628 @@ ul, li{
 
 .navBar{
   position: relative;
+  display: inline-block;
   width: 100%;
-  margin: 0 auto;
+  margin-bottom: 15px;
   padding: 0;
   text-align: center;
-  margin-right: -10%;
+}
+
+.navBar h1{
+  background-color: #B4292E;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  display: inline-block;
 }
 
 .navBar ul{
+  margin: 0 auto;
   padding: 0;
-  margin: 0;
   text-align: center;
+  float: none;
+  width: 100%;
 }
 
 .navBar li{
+  float: none;
   background-color: #B4292E;
-  margin: 3.5px;
-  padding: 10px 50px 10px 50px;
+  margin-top: 10px;
+  padding: 10px 5.5% 10px 5.5%;
   font-weight: lighter;
   text-align: center;
   display: inline-block;
+}
+
+ .navBar li:hover{
+  background-color: white;
+  color: #B4292E;
+  font-weight: bold;
+}
+
+.sliderArea{
+  width: 100%;
+}
+
+.slider{
+  width: 100%;
+  height: 350px;
+  border: solid 7px;
+  border-color: white;
+  background-image: url('../assets/top-image.png');
+  background-repeat: no-repeat;
+  height: 350px;
+  margin-bottom: 15px;
+  background-position: -10px -150px;
+  -webkit-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  -moz-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+}
+
+.sliderOverlay{
+  width: 100%;
+  height: 350px;
+  background-image: url('../assets/grid.png');
+  background-size: cover;
+  background-repeat: repeat;
+  opacity: 0.5;
+}
+
+.sliderArea img{
+  float: left;
+  position: relative;
+  margin-top: 65px;
+  margin-left: 5%;
+  z-index: 1;
+}
+
+.sliderArea .fa-circle{
+  margin-top:25px;
+  margin-right: 15px;
+}
+
+.articles{
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: inline-flex;
+}
+
+.articlesHidden{
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 15px;
+  background-color: white;
+  text-align: left;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  -moz-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+}
+
+.articlesHidden a{
+  text-decoration: none;
+  color: #B4292E;
+}
+
+.articlesHidden a:hover{
+  color: black;
+}
+
+.articlesHidden h3{
+  padding: 0px 15px 0px 15px;
+}
+
+.articleBox{
+  width: 33%;
+  height: auto;
+  display:  inline-block;
+  position: relative;
+  background-color: white;
+  margin:0px 1% 0px 1%;
+  padding: 1%;
+  color: black;
+  -webkit-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  -moz-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  overflow: hidden;
+}
+
+.articleBox h1{
+  text-align: left;
+  font-weight: normal;
+}
+
+.date{
+  text-align: left;
+  font-weight: lighter;
+  color: #AAA;
+  font-size: 15px;
+}
+
+.articlePreview{
+  text-align: left;
+  position: relative;
+  color: #777;
+  padding: 2px 0px 30px 0px;
+}
+
+.articleBox a{
+  position: absolute;
+  bottom: 20px;
+  left: 31%;
+  padding: 2px;
+  text-decoration: none;
+  font-weight: bold;
+  color:#B4292E;
+}
+
+.articleBox a:hover{
+  color:black;
+}
+
+.skateboarderContainer{
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.skateboarderContainer h1{
+  font-size: 50px;
+  text-align: center;
+}
+
+.skateboarderContainerLeft{
+  width: 66%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  margin-top: 4%;
+}
+
+.skateboarderContainerLeft h1{
+  margin-top: 20%;
+}
+
+.skateboarderSmallLeft{
+  width: 46%;
+  height: 250px;
+  display: inline-block;
+  float: left;
+  margin: 0px 1.5% 0px 1.5%;
+  border: solid 5px;
+  background-image: url("../assets/sk8er-4.png");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  -moz-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+}
+
+.skateboarderContainer h1:hover{
+  background-color: #B4292E;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.skateboarderSmallRight{
+  width: 46%;
+  height: 250px;
+  display: inline-block;
+  float: left;
+  margin: 0px 0px 0px 1.5%;
+  border: solid 5px;
+  background-image: url("../assets/sk8er-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  -moz-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+}
+
+.skateboarderTall{
+  width: 30%;
+  height: 533px;
+  display: inline-block;
+  position: relative;
+  float: left;
+  margin: 4% 1.5% 0px 1%;
+  border: solid 5px;
+  background-image: url("../assets/sk8er-2.png");
+  background-position: -500px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  -moz-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+}
+
+.skateboarderTall  h1{
+  margin-top: 60%;
+}
+
+.skateboarderWide{
+  width: 96.25%;
+  height: 250px;
+  display: inline-block;
+  float: left;
+  margin: 3% 1.5% 0px 1.5%;
+  border: solid 5px;
+  background-image: url("../assets/sk8er-1.png");
+  background-position: 0px -100px;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  -moz-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+}
+
+.skateboarderWide  h1{
+  margin-top: 12%;
+}
+
+.skateboarderContainerHidden{
+  width:100%;
+  height: auto;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.skateboarderHidden1{
+  width: 48%;
+  height: 250px;
+  display: inline-block;
+  float: left;
+  margin: 0;
+  border: solid 5px;
+  background-image: url("../assets/sk8er-4.png");
+  background-position: right;
+  background-size:cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  -moz-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+}
+
+.skateboarderHidden2{
+  width: 48%;
+  height: 250px;
+  display: inline-block;
+  float: left;
+  margin: 0;
+  border: solid 5px;
+  background-image: url("../assets/sk8er-3.png");
+  background-size: cover;
+  -webkit-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  -moz-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+}
+
+.skateboarderHidden3{
+  width: 48%;
+  height: 250px;
+  display: inline-block;
+  float: left;
+  margin: 0;
+  border: solid 5px;
+  background-image: url("../assets/sk8er-1.png");
+  background-size: cover;
+  -webkit-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  -moz-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+}
+
+.skateboarderHidden4{
+  width: 48%;
+  height: 250px;
+  display: inline-block;
+  float: left;
+  margin: 0;
+  border: solid 5px;
+  background-image: url("../assets/sk8er-2.png");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  -moz-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+}
+
+.skateboarderContainerHidden h1{
+  font-size: 40px;
+  text-align: center;
+  padding: 50px 15px 50px 15px;
+}
+
+.skateboarderContainerHidden h1:hover{
+  background-color: #B4292E;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.skateboards{
+  width: 100%;
+  background-color: white;
+  padding: 45px 0px 45px 0px;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  -moz-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+}
+
+.skateboardsHidden{
+    width: 100%;
+    background-color: white;
+    padding: 45px 0px 45px 0px;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+    -moz-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+    box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+}
+
+.skateboardsTopHidden{
+  width: 100%;
+}
+
+.skateboardsBottomHidden{
+  width: 100%;
+}
+
+.skateboardsHidden img{
+  width: 9%;
+  margin:2% 4% 2% 4%;
+  transition: all .5s ease;
+}
+
+.skateboardsHidden img:hover{
+  -webkit-transform: scale(1.2,1.2);
+  -moz-transform:scale(1.2,1.2);
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+}
+
+.skateboards img{
+  margin: 1%  2% 1% 2%;
+  text-align: center;
+  vertical-align: middle;
+  transition: all .5s ease;
+  width: 55px;
+}
+
+.skateboards img:hover{
+  -webkit-transform: scale(1.2,1.2);
+  -moz-transform:scale(1.2,1.2);
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+}
+
+.contactContainer{
+  width: 100%;
+  background-color: white;
+  height: auto;
+  text-align: left;
+  padding: 15px 0px 15px 0px;
+  margin-bottom: 100px;
+  display: inline-block;
+  -webkit-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  -moz-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+}
+
+.contactInfo{
+  width: 45%;
+  color: #777;
+  margin: 2%;
+  display: inline-block;
+  float: left;
+}
+
+.contactInfoHidden{
+  width: 96%;
+  background-color: white;
+  color: #777;
+  display: inline-block;
+  float: left;
+  padding: 15px 2% 15px 2%;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  -moz-box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+  box-shadow: 0px 10px 7px -4px rgba(170,170,170,0.88);
+}
+
+.contactInfo h1{
+  color: black;
+  font-weight: normal;
+}
+
+.contactInfoHidden h1{
+  color: black;
+  font-weight: normal;
+}
+
+.contactInfo ul{
+  float:none;
+  color: black;
+  padding: 0;
+  display: inline-flex;
+  margin-top: 0;
+}
+
+.contactInfo li{
+  margin: 5px;
+  padding: 5px;
+}
+
+.contactInfoHidden ul{
+  float:none;
+  color: black;
+  padding: 0;
+  display: inline-flex;
+  margin-top: 0;
+}
+
+.contactInfoHidden li{
+  margin: 5px;
+  padding: 5px;
+}
+
+.contactField{
+  border: solid 2px;
+  border-color: grey;
+  padding: 2%;
+}
+
+.contactMessage{
+  border:solid 2px;
+  border-color: grey;
+  padding: 2% 2% 20% 2%;
+}
+
+.submitButton{
+  background-color: #B4292E;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+  float: right;
+  width: 33%;
+  padding: 2% 5% 2% 5%;
+}
+
+.submitButton:hover{
+  background-color: white;
+  color: #B4292E;
+  font-weight: bold;
+  border: solid 2px;
+  border-color: #B4292E;
+}
+
+.aside{
+  width: 14%;
+  padding: 15px 0px 15px 0px;
+  float: left;
+  position: absolute;
+  left: 1%;
+  top: 1100px;
+  background: #B4292E;
+  background:
+    linear-gradient(225deg, transparent 30px, #B4292E 0) top right,
+	  linear-gradient(315deg, transparent 30px, #B4292E 0) bottom right;
+  background-size: 100% 50%;
+	background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform: 1s;
+}
+
+.aside:hover{
+  -webkit-transform:rotate(360deg);
+  transform:rotate(360deg);
+}
+
+.aside h3{
+  font-weight: normal;
+}
+
+@media all and (max-width: 600px){
+  .header{
+    display: none;
+  }
+  .navBar h1{
+    margin-top: 10px;
+  }
+  .articles{
+    display: none;
+  }
+  .skateboarderHidden1{
+    width: 98%;
+  }
+  .skateboarderHidden2{
+    width: 98%;
+  }
+  .skateboarderHidden3{
+    width: 98%;
+  }
+  .skateboarderHidden4{
+    width: 98%;
+  }
+  .contactContainer{
+    display: none;
+  }
+}
+
+@media all and (max-width: 1024px){
+  .totalLayout{
+    width: 95%;
+  }
+  .header p{
+    display: none;
+  }
+  .header li{
+    font-size:0.5em;
+  }
+  .navBar li{
+    margin-top: 0;
+    display: block;
+    font-size: 1.5em;
+  }
+  .sliderArea{
+    display: none;
+  }
+  .date{
+    display:none;
+  }
+  .articlePreview{
+    display:none;
+  }
+  .articleBox h1{
+    padding-bottom: 30px;
+  }
+  .skateboarderContainer{
+    display: none;
+  }
+  .skateboards{
+  display: none;
+  }
+  .contactMessage{
+    padding-bottom: 200px;
+  }
+}
+
+@media all and (max-width: 1280px){
+  .aside{
+    display: none;
+  }
+}
+
+@media all and (min-width:1025px){
+  .topLogo{
+    display:none;
+  }
+  .navBar h1{
+    display: none;
+  }
+  .skateboarderContainerHidden{
+    display: none;
+  }
+  .skateboardsHidden{
+    display: none;
+  }
+}
+
+@media all and (min-width: 601px){
+  .articlesHidden{
+    display:none;
+  }
+  .contactInfoHidden{
+    display:none;
+  }
+  .bottomNavBar{
+    display:none;
+  }
 }
