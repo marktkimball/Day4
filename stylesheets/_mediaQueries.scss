@@ -1,0 +1,119 @@
+@media all and (max-width: 600px){
+  .header{
+    display: none;
+  }
+  .navBar h1{
+    margin-top: 10px;
+  }
+  .articles{
+    display: none;
+  }
+  .skateboarderHidden1{
+    width: 98%;
+  }
+  .skateboarderHidden2{
+    width: 98%;
+  }
+  .skateboarderHidden3{
+    width: 98%;
+  }
+  .skateboarderHidden4{
+    width: 98%;
+  }
+  .contactContainer{
+    display: none;
+  }
+}
+
+@media all and (max-width: 1024px){
+  .totalLayout{
+    width: 95%;
+  }
+  .header p{
+    display: none;
+  }
+  .header li{
+    font-size:0.5em;
+  }
+  .navBar li{
+    margin-top: 0;
+    display: block;
+    font-size: 1.5em;
+  }
+  .sliderArea{
+    display: none;
+  }
+  .date{
+    display:none;
+  }
+  .articlePreview{
+    display:none;
+  }
+  .articleBox h1{
+    padding-bottom: 30px;
+  }
+  .skateboarderContainer{
+    display: none;
+  }
+  .skateboards{
+  display: none;
+  }
+  .contactMessage{
+    padding-bottom: 200px;
+  }
+}
+
+@media all and (max-width: 1280px){
+  .aside{
+    display: block;
+    width: 100%;
+    padding: 15px 0px 15px 0px;
+    margin-bottom: 15px;
+    position: relative;
+    left: 0;
+    top: 0;
+    font-size: 1.5em;
+    background:$peraltaRed;
+    background:
+      linear-gradient(45deg,  transparent 15px, $peraltaRed 15px),
+      linear-gradient(-45deg, transparent 15px, $peraltaRed 15px),
+      linear-gradient(225deg, transparent 15px, $peraltaRed 15px),
+      linear-gradient(-225deg, transparent 15px, $peraltaRed 15px);
+    background-position: bottom left, bottom right, top right, top left;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    -webkit-transition: none;
+    transition: none;
+    &:hover{
+      -webkit-transform:none;
+      transform:none;
+    }
+  }
+}
+
+@media all and (min-width:1025px){
+  .topLogo{
+    display:none;
+  }
+  .navBar h1{
+    display: none;
+  }
+  .skateboarderContainerHidden{
+    display: none;
+  }
+  .skateboardsHidden{
+    display: none;
+  }
+}
+
+@media all and (min-width: 601px){
+  .articlesHidden{
+    display:none;
+  }
+  .contactInfoHidden{
+    display:none;
+  }
+  .bottomNavBar{
+    display:none;
+  }
+}

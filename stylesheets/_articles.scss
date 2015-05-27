@@ -1,0 +1,71 @@
+.articles{
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: inline-flex;
+  h1{
+    color: $peraltaRed;
+  }
+}
+
+.articlesHidden{
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 15px;
+  background-color: white;
+  text-align: left;
+  text-decoration: none;
+  @include shadow;
+  a{
+    text-decoration: none;
+    color: $peraltaRed;
+    &:hover{
+      color: black;
+    }
+  }
+  h3{
+    padding: 0px 15px 0px 15px;
+  }
+}
+
+.articleBox{
+  width: 33%;
+  height: auto;
+  display:  inline-block;
+  position: relative;
+  background-color: white;
+  margin:0px 1% 0px 1%;
+  padding: 1%;
+  overflow: hidden;
+  @include shadow;
+  h1{
+    text-align: left;
+    font-weight: normal;
+  }
+  a{
+    position: absolute;
+    bottom: 20px;
+    left: 31%;
+    padding: 2px;
+    text-decoration: none;
+    font-weight: bold;
+    color:$peraltaRed;
+    &:hover{
+      color:black;
+    }
+  }
+}
+
+.date{
+  text-align: left;
+  font-weight: lighter;
+  color: #AAA;
+  font-size: 15px;
+}
+
+.articlePreview{
+  text-align: left;
+  position: relative;
+  color: #777;
+  padding: 2px 0px 30px 0px;
+}

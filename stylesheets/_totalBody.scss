@@ -1,0 +1,28 @@
+body{
+  background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url('../assets/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+img{
+  max-width: 100%;
+}
+
+.totalLayout{
+  width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ul, li{
+  list-style-type: none;
+  position: relative;
+  float: left;
+  display: inline-block;
+}
+
+li{
+  @include shadow;
+}

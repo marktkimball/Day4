@@ -1,0 +1,88 @@
+.contactContainer{
+  width: 100%;
+  background-color: white;
+  height: auto;
+  text-align: left;
+  padding: 15px 0px 15px 0px;
+  margin-bottom: 100px;
+  display: inline-block;
+  @include shadow;
+}
+
+.contactInfo{
+  width: 45%;
+  color: #777;
+  margin: 2%;
+  display: inline-block;
+  float: left;
+  h1{
+    color: black;
+    font-weight: normal;
+  }
+  ul{
+    float:none;
+    color: black;
+    padding: 0;
+    display: inline-flex;
+    margin-top: 0;
+  }
+  li{
+    margin: 5px;
+    padding: 5px;
+  }
+}
+
+.contactInfoHidden{
+  width: 96%;
+  background-color: white;
+  color: #777;
+  display: inline-block;
+  float: left;
+  padding: 15px 2% 15px 2%;
+  margin-bottom: 15px;
+  @include shadow;
+  h1{
+    color: black;
+    font-weight: normal;
+  }
+  ul{
+    float:none;
+    color: black;
+    padding: 0;
+    display: inline-flex;
+    margin-top: 0;
+  }
+  li{
+   margin: 5px;
+   padding: 5px;
+ }
+}
+
+.contactField{
+  border: solid 2px;
+  border-color: grey;
+  padding: 2%;
+}
+
+.contactMessage{
+  border:solid 2px;
+  border-color: grey;
+  padding: 2% 2% 20% 2%;
+}
+
+.submitButton{
+  background-color: #B4292E;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+  float: right;
+  width: 33%;
+  padding: 2% 5% 2% 5%;
+  &:hover{
+    background-color: white;
+    color: $peraltaRed;
+    font-weight: bold;
+    border: solid 2px;
+    border-color: $peraltaRed;
+  }
+}

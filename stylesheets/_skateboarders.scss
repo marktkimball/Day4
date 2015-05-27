@@ -1,0 +1,135 @@
+.skateboarderContainer{
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 15px;
+  h1{
+    font-size: 50px;
+    text-align: center;
+    &:hover{
+      background-color: $peraltaRed;
+      opacity: 0.75;
+      z-index: 1;
+    }
+  }
+}
+
+.skateboarderContainerLeft{
+  width: 66%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  h1{
+    margin-top: 20%;
+  }
+}
+
+.skateboarderSmallLeft{
+  width: 46%;
+  height: 250px;
+  display: inline-block;
+  float: left;
+  margin: 0px 1.5% 0px 1.5%;
+  border: solid 5px;
+  background-image: url("../assets/sk8er-4.png");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include shadow;
+}
+
+.skateboarderSmallRight{
+  width: 46%;
+  height: 250px;
+  display: inline-block;
+  float: left;
+  margin: 0px 0px 0px 1.5%;
+  border: solid 5px;
+  background-image: url("../assets/sk8er-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include shadow;
+}
+
+.skateboarderTall{
+  width: 30%;
+  height: 533px;
+  display: inline-block;
+  position: relative;
+  float: left;
+  margin: 0 1.5% 0px 1%;
+  border: solid 5px;
+  background-image: url("../assets/sk8er-2.png");
+  background-position: -500px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include shadow;
+  h1{
+    margin-top: 60%;
+  }
+}
+
+.skateboarderWide{
+  width: 96.25%;
+  height: 250px;
+  display: inline-block;
+  float: left;
+  margin: 3% 1.5% 0px 1.5%;
+  border: solid 5px;
+  background-image: url("../assets/sk8er-1.png");
+  background-position: 0px -100px;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  @include shadow;
+  h1{
+    margin-top: 12%;
+  }
+}
+
+.skateboarderContainerHidden{
+  width:100%;
+  height: auto;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 15px;
+  position: relative;
+  h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 50px 15px 50px 15px;
+    &:hover{
+      background-color: $peraltaRed;
+      opacity: 0.75;
+      z-index: 1;
+    }
+  }
+}
+
+.skateboarderHidden1{
+  @include skateboarderHiddenElements;
+  background-image: url("../assets/sk8er-4.png");
+  background-position: right;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.skateboarderHidden2{
+  @include skateboarderHiddenElements;
+  background-image: url("../assets/sk8er-3.png");
+  background-size: cover;
+}
+
+.skateboarderHidden3{
+  @include skateboarderHiddenElements;
+  background-image: url("../assets/sk8er-1.png");
+  background-size: cover;
+}
+
+.skateboarderHidden4{
+  @include skateboarderHiddenElements;
+  background-image: url("../assets/sk8er-2.png");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
